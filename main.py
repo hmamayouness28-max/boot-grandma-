@@ -17,7 +17,7 @@ import re
 
   # ---   غيير فقط اسم موقع بدون تغيير feed       ---
 
-RSS_URL = "https://grandmabites.com/feed"
+RSS_URL = "https://grandmadishes.com/feed"
 POSTED_LINKS_FILE = "posted_links.txt"
 
 def get_posted_links():
@@ -105,7 +105,7 @@ def main():
         # --- ها العنوان اسفله غييره بما يناسبك  ---
 
         call_to_action = "For the full recipe, including step-by-step photos and tips, visit us at"
-        link_html = f'<br><p><em>{call_to_action} <a href="{original_link}" rel="noopener" target="_blank">grandmabites.com</a>.</em></p>'
+        link_html = f'<br><p><em>{call_to_action} <a href="{original_link}" rel="noopener" target="_blank">grandmadishes.com</a>.</em></p>'
         full_html_content = image_html + text_content_html + link_html
 
         story_field = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'p[data-testid="editorParagraphText"]')))
